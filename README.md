@@ -23,6 +23,7 @@
 
 - 命令名（`/compact` 等）**不翻译**——它们是输入标识符。
 - **Full access（完全访问）强调色**：在底部权限选择器、`/permission` 弹窗、设置页「权限」行中，`完全访问` 的文字与图标（SVG 继承 `currentColor`）使用橙色与红色之间的强调色 `#ff5722`；关闭开关时一并还原。
+- **运行状态光影**：官方在系统开启"减弱动态效果"（`prefers-reduced-motion`）时停用"深度思考中"的 shimmer 动画；本插件强制恢复光影流动（仅作用于该状态容器，不影响其他界面）。
 - 短通用词（Off/High/Max/Default）只在 `role="menu"` / `role="listbox"` / `aria-haspopup="menu"` 的菜单类表面内替换，绝不会动到用户消息、助手回复、工具结果、代码块、输入框。
 - 会话内容（`[data-chat-flow]` / `[data-chat-flow-kind]` / 思考块 / 工具视图）整区跳过。
 - 功能零影响：权限预设的机器值（`read-only` / `workspace-write` / `danger-full-access`）、推理等级 id（`off` / `high` / `max`）、命令名全部保持原样，只是屏幕上显示的中文不同。

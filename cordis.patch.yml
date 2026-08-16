@@ -1,0 +1,5 @@
+# dsh-zh bundle layer: mount the localization plugin when a profile lists this
+# bundle.
+- insert:
+    - id: zh
+      name: dsh-zh
